@@ -4,7 +4,7 @@ ENV UPDATED_AT 2020-06-03
 
 RUN rm -rf /etc/yum.repos.d/*.repo
 
-ADD CentOS-Base.repo /etc/yum.repos.d/
+ADD http://mirrors.aliyun.com/repo/Centos-7.repo /etc/yum.repos.d/
 
 RUN yum clean all -y && \
     yum makecache -y && \
